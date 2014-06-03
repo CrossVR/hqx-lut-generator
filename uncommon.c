@@ -25,12 +25,6 @@
 #include "lut_generator.h"
 #include "hqx/src/common.h"
 
-const static uint8_t g_map[4][10] = {
-        { -1, 1, 2, -1, 3, 0, -1, -1, -1, -1 },
-        { -1, -1, 1, 2, -1, 0, 3, -1, -1, -1 },
-        { -1, -1, -1, -1, 1, 0, -1, 2, 3, -1 },
-        { -1, -1, -1, -1, -1, 0, 1, -1, 2, 3 } };
-
 inline uint32_t rgb_to_yuv(uint32_t c)
 {
     // Technically it's YUV for black
@@ -94,7 +88,7 @@ inline uint32_t Interpolate_3(uint32_t c1, int w1, uint32_t c2, int w2, uint32_t
 
 inline uint32_t* trans(uint32_t* pc)
 {
-    return g_dp + g_cross * g_dpL * 4 + ((int)pc / sizeof(pc)) * g_dpL + g_pattern;
+    return g_dp + g_cross * g_dpL * g_dpR + ((int)pc / sizeof(pc)) * g_dpL + g_pattern;
 }
 
 inline void Interp0(uint32_t * pc, uint32_t c1)

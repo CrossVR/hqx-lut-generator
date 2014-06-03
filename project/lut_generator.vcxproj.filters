@@ -27,6 +27,12 @@
     <ClCompile Include="..\uncommon.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\hqx\src\hq4x.c">
+      <Filter>HQx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hqx\src\hq3x.c">
+      <Filter>HQx</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\lut_generator.h">

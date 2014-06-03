@@ -84,6 +84,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\hqx\src\hq2x.c" />
+    <ClCompile Include="..\hqx\src\hq3x.c" />
+    <ClCompile Include="..\hqx\src\hq4x.c" />
     <ClCompile Include="..\lut_generator.c" />
     <ClCompile Include="..\uncommon.c" />
   </ItemGroup>

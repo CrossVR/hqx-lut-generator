@@ -20,7 +20,9 @@
 #define __LUT_H_
 
 extern uint32_t* g_dp;
+extern uint8_t** g_map;
 extern int g_dpL;
+extern int g_dpR;
 extern int g_pattern;
 extern int g_cross;
 
