@@ -28,9 +28,9 @@ const static uint8_t q2[10] = { -1, -1, 1, 2, -1, 0, 3, -1, -1, -1 }; // w5, w2,
 const static uint8_t q3[10] = { -1, -1, -1, -1, 1, 0, -1, 2, 3, -1 }; // w5, w4, w7, w8
 const static uint8_t q4[10] = { -1, -1, -1, -1, -1, 0, 1, -1, 2, 3 }; // w5, w6, w8, w9
 
-const static uint8_t* g_hq2x_map[4] = { &q1, &q2, &q3, &q4 };
-const static uint8_t* g_hq3x_map[9] = { &q1, &q1, &q2, &q1, &q1, &q2, &q3, &q3, &q4 };
-const static uint8_t* g_hq4x_map[16] = { &q1, &q1, &q2, &q2, &q1, &q1, &q2, &q2, &q3, &q3, &q4, &q4, &q3, &q3, &q4, &q4 };
+const static uint8_t* g_hq2x_map[4] = { q1, q2, q3, q4 };
+const static uint8_t* g_hq3x_map[9] = { q1, q1, q2, q1, q1, q2, q3, q3, q4 };
+const static uint8_t* g_hq4x_map[16] = { q1, q1, q2, q2, q1, q1, q2, q2, q3, q3, q4, q4, q3, q3, q4, q4 };
 
 uint32_t* g_dp;
 uint8_t** g_map;
