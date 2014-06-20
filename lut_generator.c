@@ -23,10 +23,10 @@
 
 const static uint32_t w[10] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-const static uint8_t q1[10] = { -1, 1, 2, -1, 3, 0, -1, -1, -1, -1 }; // w5, w1, w2, w4
-const static uint8_t q2[10] = { -1, -1, 1, 2, -1, 0, 3, -1, -1, -1 }; // w5, w2, w3, w6
-const static uint8_t q3[10] = { -1, -1, -1, -1, 1, 0, -1, 2, 3, -1 }; // w5, w4, w7, w8
-const static uint8_t q4[10] = { -1, -1, -1, -1, -1, 0, 1, -1, 2, 3 }; // w5, w6, w8, w9
+const static uint8_t q1[10] = { -1, 1, 3, -1, 2, 0, -1, -1, -1, -1 }; // w5, w1, w2, w4 -> w5, w1, w4, w2
+const static uint8_t q2[10] = { -1, -1, 3, 1, -1, 0, 2, -1, -1, -1 }; // w5, w2, w3, w6 -> w5, w3, w6, w2
+const static uint8_t q3[10] = { -1, -1, -1, -1, 2, 0, -1, 1, 3, -1 }; // w5, w4, w7, w8 -> w5, w7, w4, w8
+const static uint8_t q4[10] = { -1, -1, -1, -1, -1, 0, 2, -1, 3, 1 }; // w5, w6, w8, w9 -> w5, w9, w6, w8
 
 const static uint8_t* g_hq2x_map[4] = { q1, q2, q3, q4 };
 const static uint8_t* g_hq3x_map[9] = { q1, q1, q2, q1, q1, q2, q3, q3, q4 };
